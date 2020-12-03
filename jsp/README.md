@@ -155,7 +155,7 @@ header는 general-header, request-header, entity-header 3가지로 분류할 수
 - <strong>HTTP 응답정보</strong>  
 웹서버에서 클라이언트로 보내지는 응답정보 메세지의 구조.  
 <br/> 
-![header](https://github.com/Yoojeebee/TIL/blob/master/images/header.jpg?raw=true)  
+![httpRespone](https://github.com/Yoojeebee/TIL/blob/master/images/httpRespone.jpg?raw=true)  
 <br/>
 
   HTTP 응답정보의 상태 줄은 HTTP 버전, 상태 코드(Status-Code), 상태 코드 설명(Reason-Phrase)으로 구성되어 있다. HTTP 버전은 서버가 응답하기 위해 사용하는 HTTP 버전 정보이고, 상태 코드는 요청한 처리 결과를 숫자 세 자리로 나타내며, 상태 코드 설명은 처리 결과를 이해하기 쉬운 텍스트로 표현한 것.  
