@@ -59,7 +59,6 @@ WAS는 크게 웹 서버 기능과 컨테이너 기능으로 구성되며 대부
 
 2. <strong>HTTP 요청정보</strong>  
    HTTP 요청정보는 웹 클라이언트가 웹서버에 서비스를 요청하면 HTTP에 의하여 자동으로 만들어져 서비스를 요청받는 웹서버에 전달된다. 웹 클라이언트가 서비스를 요청한다는 것은 웹 브라우저 주소줄에 URL을 입력한 후 엔터 키를 누르거나 웹 브라우저 화면의 링크 또는 버튼을 클릭하는 동작을 말하며, 웹 브라우저에게 이러한 액션이 일어나면 HTTP는 요청정보를 생성하여 웹서버에 전달함으로써 서비스 요청이 이루어진다. 아래의 그림은 서비스 요청시 전달되는 HTTP 요청정보를 그림으로 나타낸 것이다.  
-   <br/>
    ![http](https://github.com/Yoojeebee/TIL/blob/master/images/httpInfo.jpg?raw=true)  
    <br/>
 
@@ -124,7 +123,6 @@ WAS는 크게 웹 서버 기능과 컨테이너 기능으로 구성되며 대부
 header는 general-header, request-header, entity-header 3가지로 분류할 수 있으며, 클라이언트의 요청에 따라 필요한 헤더만 사용된다. 헤더에는 `name : content`의 형식으로 정보들이 표현되며 content 부분의 값들은 공백이나 탭으로 구분된다. 아래의 표는 요청정보 헤더의 필드이름과 값들이다.  
 
   ![header](https://github.com/Yoojeebee/TIL/blob/master/images/header.jpg?raw=true)  
-  <br/>
 
   1. <strong>Accept</strong>  
   클라이언트가 인식하여 처리할 수 있는 파일 타입을 명시. 여러 개의 파일 타입은 쉼표(,)로 구분하여 나열.  
@@ -154,11 +152,9 @@ header는 general-header, request-header, entity-header 3가지로 분류할 수
 
 - <strong>HTTP 응답정보</strong>  
 웹서버에서 클라이언트로 보내지는 응답정보 메세지의 구조.  
-<br/> 
 ![httpRespone](https://github.com/Yoojeebee/TIL/blob/master/images/httpRespone.jpg?raw=true)  
+HTTP 응답정보의 상태 줄은 HTTP 버전, 상태 코드(Status-Code), 상태 코드 설명(Reason-Phrase)으로 구성되어 있다. HTTP 버전은 서버가 응답하기 위해 사용하는 HTTP 버전 정보이고, 상태 코드는 요청한 처리 결과를 숫자 세 자리로 나타내며, 상태 코드 설명은 처리 결과를 이해하기 쉬운 텍스트로 표현한 것.  
 <br/>
-
-  HTTP 응답정보의 상태 줄은 HTTP 버전, 상태 코드(Status-Code), 상태 코드 설명(Reason-Phrase)으로 구성되어 있다. HTTP 버전은 서버가 응답하기 위해 사용하는 HTTP 버전 정보이고, 상태 코드는 요청한 처리 결과를 숫자 세 자리로 나타내며, 상태 코드 설명은 처리 결과를 이해하기 쉬운 텍스트로 표현한 것.  
 
 
   1. <strong>상태 코드</strong>  
